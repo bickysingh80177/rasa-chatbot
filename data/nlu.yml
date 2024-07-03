@@ -1,0 +1,803 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - let's go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
+
+  - intent: goodbye
+    examples: |
+      - cu
+      - good by
+      - cee you later
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later
+
+  - intent: affirm
+    examples: |
+      - yes
+      - y
+      - indeed
+      - of course
+      - that sounds good
+      - correct
+
+  - intent: deny
+    examples: |
+      - no
+      - n
+      - never
+      - I don't think so
+      - don't like that
+      - no way
+      - not really
+
+  - intent: mood_great
+    examples: |
+      - perfect
+      - great
+      - amazing
+      - feeling like a king
+      - wonderful
+      - I am feeling very good
+      - I am great
+      - I am amazing
+      - I am going to save the world
+      - super stoked
+      - extremely good
+      - so so perfect
+      - so good
+      - so perfect
+
+  - intent: mood_unhappy
+    examples: |
+      - my day was horrible
+      - I am sad
+      - I don't feel very well
+      - I am disappointed
+      - super sad
+      - I'm so sad
+      - sad
+      - very sad
+      - unhappy
+      - not good
+      - not very good
+      - extremly sad
+      - so saad
+      - so sad
+
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?
+
+  - intent: weather
+    examples: |
+      - how is the weather today?
+      - tell me the weather
+      - weather
+
+  - intent: introduction
+    examples: |
+      - give me the summary
+      - summary
+      - describe
+      - What does the Employee Handbook cover?
+      - What is the purpose of the handbook?
+      - What are the expectations from employees
+      - How does the organization view employees
+      - What consequences apply for unauthorized disclosure
+      - Where can employees seek clarification
+
+  - intent: applicability
+    examples: |
+      - How do I apply for this position?
+      - What is the effective date of this Employee Handbook?
+      - What does the handbook cover?
+      - Are there any exceptions or exclusions
+      - What happens to existing policies and circulars
+      - Where can employees access the full handbook
+
+  - intent: company
+    examples: |
+      - Company
+      - What does “Company” refer to?
+      - Are subsidiaries included in the definition?
+      - What about overseas branches or offices?
+
+  - intent: board
+    examples: |
+      - Board
+      - What does Board refer to in the context of SPIL?
+      - Who does the term Board include?
+      - Is there a specific definition for Board within SPIL?
+
+  - intent: company_profile
+    examples: |
+      - Company Profile
+      - What products does SPIL specialize in?
+      - How has SPIL contributed to the Indian market?
+      - What makes SPIL's wood filler product unique?
+      - Where does SPIL have branches across India?
+      - What does SPIL emphasize in terms of wood coating optimization and protection?
+      - How does SPIL differentiate itself in the wood coatings industry?
+      - What are SPIL's initiatives for ecological sustainability?
+      - How does SPIL plan to expand its market reach?
+      - What is SPIL's current market position in India?
+      - How does SPIL engage with its customers and industry stakeholders?
+
+  - intent: co_founders
+    examples: |
+      - Who founded SPIL and in which year?
+      - What was the vision of SPIL's founders when they established the company?
+      - How does SPIL aim to achieve a distinct global presence in the paint industry?
+      - What are the key elements of SPIL's high-quality coating offerings?
+      - How does SPIL provide technical assistance to its customers?
+      - What role does healthy customer relationships play in SPIL's business philosophy?
+      - How has SPIL's vision evolved since its foundation in 2006?
+      - Can you describe the founders' backgrounds or previous experiences that contributed to SPIL's establishment?
+      - What milestones has SPIL achieved since its inception?
+      - How does SPIL measure success in terms of its global presence and customer satisfaction?
+
+  - intent: companys_vision
+    examples: |
+      - How does SPIL define being one of the most respectable brands in its category?
+      - What specific brand building initiatives does SPIL undertake?
+      - How does SPIL ensure the provision of world-class products?
+      - What measures does SPIL implement to maintain consistent quality in its products?
+      - How does SPIL's commitment to quality lead to profitability?
+      - What strategies does SPIL employ to achieve growth for everyone associated with the organization?
+      - How does SPIL measure and track its progress towards becoming a respected brand?
+      - Can you provide examples of initiatives or campaigns SPIL has undertaken to enhance its brand reputation?
+      - How does SPIL ensure alignment of its brand values with customer expectations?
+      - What role does employee development play in achieving SPIL's vision of growth for everyone associated with the organization?
+
+  - intent: commitment
+    examples: |
+      - How does Sirca tailor its solutions to meet customer requirements and needs?
+      - What strategies does Sirca employ to lead in innovative and cost-saving solutions for customers?
+      - Can you describe how "Team Sirca" collaborates with customers to understand their products and production processes?
+      - What specific steps does Sirca take to become the most reliable and dependable supplier of wood coating solutions?
+      - How does Sirca ensure its solutions are complete and innovative for customers?
+      - What measures does Sirca use to assess customer satisfaction and feedback on its solutions?
+      - Can you provide examples of innovative solutions Sirca has developed for its customers?
+      - How does Sirca prioritize customer needs in its product development and service offerings?
+      - What role does continuous improvement play in Sirca's approach to serving its customers?
+      - How does Sirca differentiate itself from competitors in the wood coating solutions industry based on customer relationships and service?
+
+  - intent: SPIL Ethics Pledge Word of Honor
+    examples: |
+      - How does the organization define higher productivity and service standards for its employees?
+      - What are the core values, policies, and procedures that employees are expected to respect and adhere to?
+      - Can you elaborate on the manuals or guidelines provided to help employees achieve the organization's goals?
+      - How does the organization encourage proper and maximum utilization of manpower and resources?
+      - What measures are in place to support the company's growth through employee efforts?
+      - How does an employee determine and provide the best solutions to customer inquiries or grievances?
+      - What role does teamwork play in the organization's culture, and how is excellence in work defined and promoted?
+      - How does the organization measure and recognize excellence in work?
+      - Are there specific training or development programs available to help employees achieve higher productivity and service standards?
+      - How does the organization foster a culture of continuous improvement among its employees?
+
+  - intent: recruitment
+    examples: |
+      - How does the company ensure equal opportunity in its recruitment process?
+      - What specific measures or practices does the company employ to eliminate discrimination based on gender, sexual orientation, caste, or disability?
+      - Who holds the authority to approve appointments within the company?
+      - Can you describe the criteria or qualifications considered during the approval process by the Director or Managing Director?
+      - How does the company ensure transparency and fairness in its recruitment procedures?
+      - Are there any initiatives or programs in place to promote diversity and inclusion within the workforce?
+      - What steps does the company take to accommodate applicants with disabilities during the recruitment process?
+      - How does the company monitor compliance with equal opportunity policies in recruitment?
+      - Can you provide examples of how the company's equal opportunity policy has positively impacted its workforce?
+      - How does the company handle grievances related to perceived discrimination in the recruitment process?
+
+  - intent: process_of_recruitment
+    examples: |
+      - Process  of  recruitment
+      - How does the department head determine the specific project needs and communicate them to HR for recruitment?
+      - What are the minimum academic qualifications required for job responsibilities? Are there specific criteria for different positions?
+      - How does the company balance experience and qualifications when considering both experienced candidates and freshers?
+      - Can you describe the typical contents of the email sent to short-listed candidates regarding the company profile and interview details?
+      - Who comprises the Interview Recruitment Cell and what roles do they play in the interview process?
+      - How does the Interview Recruitment Cell evaluate and decide on the final candidate for a position?
+      - What factors are considered during salary negotiation after a candidate has been selected?
+      - How does the company distinguish between recruitment for business expansion versus replacement roles?
+      - When and how does the HR Department conduct reference checks for potential employees?
+      - What statutory forms are employees required to fill out upon joining, and what does the induction and onboarding process entail?
+
+  - intent: travel_expenses
+    examples: |
+      - Travel Expenses
+      - What does the Travel Policy entail regarding reimbursement of travel expenses for candidates?
+      - Are there specific guidelines or limits for travel expenses that candidates can expect to be reimbursed?
+      - How does the company determine eligibility for reimbursement of travel expenses?
+      - Who should candidates contact to inquire about the details of the Travel Policy and reimbursement process?
+      - Can candidates request an advance for travel expenses or must expenses be incurred before reimbursement?
+      - What documentation is required from candidates to support their reimbursement claims for travel expenses?
+      - How long does it typically take for candidates to receive reimbursement for their travel expenses?
+      - Are there any exceptions or additional considerations for candidates traveling internationally or from remote locations?
+      - How does the company ensure fairness and transparency in reimbursing travel expenses to candidates?
+      - Can candidates negotiate or discuss travel expense arrangements prior to traveling for interviews or meetings?
+
+  - intent: relocation_expenses
+    examples: |
+      - Relocation Expenses
+      - How does the company define "critical positions" eligible for intercity relocation expenses?
+      - What factors does management consider when exercising discretion for intercity relocation expenses?
+      - Are there specific guidelines or criteria that determine when relocation expenses will be considered?
+      - Who within the management team makes the decision regarding intercity relocation expenses?
+      - Can employees or candidates request consideration for intercity relocation expenses, and if so, how?
+      - What types of expenses are typically covered under intercity relocation expenses?
+      - How does the company ensure fairness and consistency in the application of its relocation expense policy?
+      - Are there limits or caps on the amount of relocation expenses that can be reimbursed?
+      - What documentation or proof is required from employees or candidates to support their request for relocation expenses?
+      - How does the company handle tax implications or reporting related to relocation expenses for employees?
+
+  - intent: campus_recruitment
+    examples: |
+      - Campus Recruitment
+      - How does the company define the role of internships in building the cadre of students?
+      - What specific objectives does the internship program aim to achieve for both the company and the students?
+      - Can you describe the structure and duration of the company's internship program?
+      - How does the internship program enhance the skills and abilities of participating students?
+      - What criteria does the company use to select candidates for its internship program?
+      - What support or mentorship is provided to interns during their tenure at the company?
+      - How does the company evaluate the performance of interns and provide feedback?
+      - Can interns transition into full-time roles within the company after completing their internship?
+      - How does the company collaborate with educational institutions for campus placements?
+      - What roles are typically offered through campus placements, and how does the company ensure these roles align with students' career aspirations?
+
+  - intent: internships_programme
+    examples: |
+      - Internships Programme
+      - How does the company determine which reputed colleges to recruit students from for specific projects?
+      - What criteria does the company use to assess the number of students required for a particular project?
+      - Can you describe the process by which students are selected from reputed colleges for these projects?
+      - What factors contribute to the determination of the Rs 7000/- stipend amount offered to students?
+      - How does the stipend amount aim to boost student morale during their tenure with the company?
+      - Are there additional benefits or opportunities provided to students beyond the stipend during their engagement with the company?
+      - How does the company ensure a meaningful learning experience for students while working on projects?
+      - What types of projects or roles are typically available to students through this recruitment method?
+      - How does the company support the professional development of students recruited from colleges?
+      - Can students expect any form of mentorship or guidance from senior professionals while working on projects?
+
+  - intent: campus_placement
+    examples: |
+      - Campus Placement On Roll Jobs
+      - How does the organization define the roles of Management Trainee, Graduate Engineer Trainee, and Junior Executives?
+      - What criteria does the organization use to determine the pay structure ranging from Rs 250,000 to 350,000 per annum for trainees?
+      - Can you describe the process by which students are selected for these roles, and how is performance assessed during the interview?
+      - How does the organization ensure fairness and transparency in determining the pay structure based on interview performance?
+      - Are there specific skills or qualifications that candidates are expected to possess for these trainee positions?
+      - What support or training does the organization provide to trainees to help them succeed in their roles?
+      - How does the organization evaluate the performance of trainees during their probationary period?
+      - Can you elaborate on the criteria used to promote Management Trainees, Graduate Engineer Trainees, and Junior Executives to the "Executive" grade after a year?
+      - What opportunities for career development and advancement are available to trainees within the organization?
+      - How does the organization ensure that the promotion process from trainee roles to executive grades is fair and merit-based?
+
+  - intent: induction
+    examples: |
+      - Induction
+      - What topics are covered during the organization's induction session?
+      - How long will the HR Buddy be assigned to a new candidate?
+      - What items are included in the Induction Kit provided by the HR Representative?
+      - How does the organization welcome new candidates on their first day?
+      - Can you list the key components of the HR Manual mentioned in the paragraph?
+
+  - intent: training_and_development
+    examples: |
+      - training
+      - development
+      - When are training needs identified according to the process outlined?
+      - Who is responsible for identifying training needs during the Performance Appraisal?
+      - How does the Department Head determine the training requirements—on what levels can training needs be identified?
+      - What is the process for obtaining approval for training sessions?
+      - What is the minimum number of participants required for a training session, according to the responsibilities of the HR Representative?
+      - How can the HR Representative adjust training sessions, and what factors are considered in making these adjustments?
+      - What additional commitment is required from employees participating in paid training sessions?
+
+  - intent: training_feedback
+    examples: |
+      - Training Feedback
+      - What is required from employees after completing a training session?
+      - How often does the Department Head evaluate employees after specific training sessions?
+      - What action does the Department Head take after evaluating employees post-training?
+      - Under what circumstances might an employee receive additional incentives after a training session?
+
+  - intent: probation
+    examples: |
+      - Probation
+      - How is the probation period described for employees?
+      - What is the primary objective of having a probation period in the organization?
+      - Who does the probation period apply to within the organization?
+      - How long does the probation period typically last for new entrants?
+
+  - intent: process_of_confirmation
+    examples: |
+      - Process of Confirmation
+      - What parameters are considered during the probation period evaluation?
+      - When does the assessment process begin for new entrants?
+      - Who is responsible for evaluating the performance of employees during probation?
+      - What performance categories must an employee achieve for confirmation?
+      - How can the management adjust a probationer's compensation, grade, or designation?
+      - What happens if an employee's performance during probation falls below the "Average" category?
+      - What documentation does the employee need to submit for record purposes during probation?
+
+  - intent: attendance_and_leave_management
+    examples: |
+      - Attendance & Leave Management
+      - How do employees register their attendance according to the organization's policy?
+      - What happens if an employee fails to register their attendance using the biometric system?
+      - What are the organization's working days?
+      - Describe the flexi-timing options available to employees.
+      - How is the "Grace Period" defined, and what are the consequences of exceeding it?
+      - Under what conditions can employees arrive late or leave early with prior approval?
+      - What is the procedure for employees on Official Duty (OD) or On Tour (OT) regarding attendance?
+      - How are leave entitlements calculated based on the Date of Joining?
+      - How is leave balance managed and carried over according to the organization's policy?
+      - What are the requirements for notifying and providing reasons for taking leave?
+      - How should employees inform about leave during emergencies?
+      - What is the process for marking attendance in the Marketing Department?
+      - How does taking leave on a Saturday and Monday affect Sunday?
+      - What does "NO WORK NO PAY" and "LOSS OF PAY" mean in the context of unauthorized absences?
+      - What are the provisions for Maternity and Paternity Leave as per the organization's policy?
+      - How are festivals treated regarding leave if taken continuously?
+      - How is Sunday treated if an employee takes leave on Saturday and Monday?
+
+  - intent: compensatory_leave
+    examples: |
+      -  Compensatory Leave
+      - How does an employee become eligible for Compensatory Leave after working on Sundays or Public Holidays?
+      - What is the process for employees regarding lunch expenses when working on Sundays or Public Holidays?
+      - What is the minimum duration of work required to avail Compensatory Leave?
+      - How much advance notice does an employee need to give before availing Compensatory Leave?
+      - Under what circumstances can Compensatory Leave not be taken?
+      - Within what timeframe must Compensatory Leave be availed?
+
+  - intent: office_security
+    examples: |
+      -  Office Security
+      - What responsibility do employees have regarding keys issued to the office?
+      - Who is responsible for ensuring office security at the end of the business day?
+      - How are employees expected to comply with management rules related to security?
+      - What is the company's policy regarding personal belongings left in the office?
+      - How should employees handle company property such as laptops, mobile phones, and projectors?
+      - How are vendors managed in terms of accessing the workplace, according to the company's policy?
+
+  - intent: transfer_provision
+    examples: |
+      - Transfer Provision
+      - Under what circumstances does the company have the right to transfer an employee?
+      - What leave entitlement does an employee have if transferred to a new location?
+      - How does the company support employees financially during relocation?
+      - Who approves the amount for the "Relocation Grant"?
+      - When is the "Relocation Grant" provided to employees and their families?
+      - In what situations is the "Relocation Grant" not applicable?
+      - What policies and procedures apply to employees being transferred to a new location?
+
+  - intent: notices_period
+    examples: |
+      - Notices Period
+      - What is the notice period requirement for resigning during probation?
+      - How does the notice period requirement change after an employee's confirmation?
+      - What forms does an employee need to fill when resigning, and where are they submitted?
+      - What departments must an employee obtain clearance from before the Full and Final Settlement process?
+      - What additional clearances are required for Marketing Executives/Representatives?
+      - Within how many working days must Department Heads respond to a resignation letter?
+      - How long does the full and final settlement process typically take?
+      - What happens to an employee's salary if they have no dues with the organization?
+      - How can an employee address unresolved grievances after resigning?
+
+  - intent: grievances_redressal_system
+    examples: |
+      - Grievances Redressal System
+      - What is the objective of the Grievances Redressal procedure in the organization?
+      - How are work-related grievances handled within the department?
+      - Who is responsible for providing resolution to intra-departmental grievances?
+      - How are inter-departmental grievances addressed according to the procedure?
+      - How does the procedure ensure proper counseling for complainants?
+
+  - intent: grievances_resolution_procedure
+    examples: |
+      - Grievances Redressal Procedure
+      - What is the timeline for sending a written complaint to the Human Resources Representative?
+      - What should the complainant do after sending a written complaint to HR?
+      - What information must the complaint include?
+      - How does the HR Department proceed upon receiving a complaint?
+      - Within how many days is the grievance report prepared by the HR Representative?
+      - Who receives the grievance report after it is prepared?
+      - What happens if a satisfactory resolution is not achieved at the escalation officer level?
+      - Who is the final authority to handle unresolved grievances according to the procedure?
+
+  - intent: welfare_and_enhancement_program
+    examples: |
+      - Welfare and Enhancement Program
+      - What are the welfare programs
+      - What are the enhancement programs
+
+  - intent: birthday_celebration
+    examples: |
+      - Birthday Celebration
+      - What is the organization's birthday policy?
+      - What is the organization's policy regarding employees' birthdays?
+      - What is the organization's policy regarding employees' anniversaries?
+
+  - intent: marriage_anniversary
+    examples: |
+      - Marriage Anniversary
+      - What initiative has management taken to enhance marital happiness among employees?
+      - How do employees avail of the benefit of movie tickets provided by the management?
+      - What is the reimbursement amount provided for movie tickets?
+      - Are there any conditions or restrictions for employees seeking reimbursement for movie tickets?
+      - How does an employee submit a claim for reimbursement of movie tickets?
+
+  - intent: wedding_ceremony
+    examples: |
+      - Wedding Ceremony
+      - What gesture does the management make towards employees who get married?
+      - How much is the gift cheque given to newlyweds by the management?
+      - What is the process for employees to avail of this benefit?
+      - What documentation does an employee need to submit to the HR Department?
+      - How does the HR Representative handle the process after receiving the wedding card?
+      - Are there any deductions made from the gift amount provided to newlyweds?
+
+  - intent: employee_children_merita_award
+    examples: |
+      - Employee Children Merit Award
+      - What is the purpose of the Employee Children Merit Award introduced by the organization?
+      - How is the reward amount determined for each academic class level?
+      - What are the eligibility criteria for receiving the cash reward?
+      - Where will the name of the awarded child be published by Sirca Paints India Limited?
+      - How does an employee apply or nominate their child for the Employee Children Merit Award?
+      - What steps does the organization take to verify the academic performance of the awarded child?
+      - Are there any additional benefits or recognition provided along with the cash reward?
+
+  - intent: salary_advance
+    examples: |
+      - Salary Advance
+      - How does an employee qualify to avail a salary advance in your organization?
+      - What is the maximum limit of the salary advance an employee can receive?
+      - Who needs to approve the salary advance request?
+      - How is the repayment of the salary advance structured?
+      - What are some examples of situations where an employee might request a salary advance?
+      - Is there any interest charged on the salary advance?
+      - What documentation or process is required for an employee to apply for a salary advance?
+      - Are there any conditions or restrictions on how the salary advance can be used?
+
+  - intent: maternity_and_paternity_leave
+    examples: |
+      - Maternity and Paternity Leave
+      - What is the organization's policy regarding maternity and paternity leave?
+
+  - intent: compensatory_leave2
+    examples: |
+      - Compensatory Leave
+      - Under what circumstances can employees avail compensatory leave in your organization?
+      - How is compensatory leave eligibility determined for work done on weekly offs or public holidays?
+      - What constitutes a full day of compensatory leave in terms of working hours?
+      - How is a half day of compensatory leave defined in terms of working hours?
+      - Are there any specific procedures employees must follow to apply for compensatory leave?
+      - Who approves compensatory leave requests in your organization?
+      - How is the record of compensatory leave maintained and monitored?
+      - Are there any restrictions or conditions on when compensatory leave can be taken?
+
+  - intent: extra_ordinary_leave_and_wfh
+    examples: |
+      - Extra Ordinary Leave and Work from Home
+      - What qualifies as a reason for employees to avail 7 days of special leave on medical grounds?
+      - What documentation does an employee need to submit to avail medical leave?
+      - What is the procedure for submitting a medical fitness certificate upon returning to work?
+      - Under what conditions can an employee request to work from home on an emergency basis?
+      - How long can an employee work from home in case of emergency, and what is the maximum duration?
+      - Who needs to approve the request for working from home in emergencies?
+      - Are there any specific guidelines or limitations on the use of work-from-home option for emergencies?
+      - How is the utilization of medical leave and work-from-home days recorded and monitored by the HR Department?
+
+  - intent: management_trainee_on_campus_recruitment
+    examples: |
+      - Management Trainee on Campus Recruitment
+      -  What academic qualifications are eligible for hiring as a Management Trainee or Graduate Engineer Trainee in your organization?
+      - How long is the initial period of employment for Management Trainees or Graduate Engineer Trainees?
+      - What is the process for hiring these trainees through campus recruitment?
+      - How is the performance of trainees evaluated during their one-year tenure?
+      - Who approves the absorption of trainees into an executive cadre after one year?
+      - Are there specific criteria or milestones trainees must achieve to be absorbed into an executive position?
+      - What benefits or opportunities are available to trainees during their training period?
+      - How does the organization support the professional development of trainees during their tenure?
+
+  - intent: internship_programme
+    examples: |
+      - Internship Programme: “You need experience to get experience”
+      - You need experience to get experience
+      - What is the purpose of the internship program offered by your organization?
+      - How can college students apply for internships with your organization?
+      - What is the process for departmental review and management approval of internship applications?
+      - What monetary benefit or stipend is provided to interns in your organization?
+      - What are the requirements for interns to submit upon completion of their internship program?
+      - Who reviews the detailed project report submitted by interns?
+      - How is the Training Completion Certificate issued to interns?
+      - Why is it important for interns to submit an acknowledgment copy of their Training Completion Certificate to the HR Department?
+
+  - intent: flexi_working_shedule
+    examples: |
+      - Flexi Working Schedule
+      - What is the purpose of defining attendance criteria in your organization?
+      - How do flexible working hours contribute to maintaining productivity and efficiency?
+      - What are the specified flexible working hour options available to employees?
+      - Are there any restrictions or guidelines employees must follow when availing flexible working hours?
+      - How does the organization ensure that work assignments are not hampered despite flexible hours?
+      - What measures are in place to monitor and maintain productivity and profitability?
+      - Who approves or oversees the implementation of flexible working hours for employees?
+      - How does the organization communicate changes or updates to attendance policies and flexible working hours?
+
+  - intent: meal_and_conveyance_charges
+    examples: |
+      - Meal and Conveyance Charges
+      - What circumstances qualify employees to claim meal expenses reimbursement?
+      - How much is the reimbursement amount for meal expenses?
+      - Under what conditions can employees claim conveyance charges reimbursement?
+      - What steps should employees take to submit their conveyance charges for reimbursement?
+      - Who needs to approve the reimbursement for conveyance charges when working on weekends or public holidays?
+      - Are there specific guidelines on the types of transportation services eligible for reimbursement (e.g., OLA, UBER)?
+      - How does the Administration Department process reimbursement requests for meal and conveyance charges?
+      - How does the organization communicate these reimbursement policies to employees?
+
+  - intent: disciplinary_procedures
+    examples: |
+      - Disciplinary Procedures
+      - How does the organization define when the Disciplinary Procedure is necessary?
+      - What steps does the organization take before resorting to disciplinary action?
+      - Can you describe the difference between informal and formal counseling in the context of resolving disciplinary matters?
+      - How does the organization ensure that the Disciplinary Procedure is perceived as positive rather than punitive?
+      - What role do Reporting Officers play in helping new entrants understand and navigate the Disciplinary Procedures?
+      - Could you explain the process and criteria for each category of disciplinary action listed (Suspension, Counseling, Warning, Termination)?
+      - How are decisions regarding disciplinary actions communicated to employees?
+      - What measures are in place to ensure fairness and transparency in the application of disciplinary procedures?
+
+  - intent: suspension
+    examples: |
+      - Suspension
+      - What is the purpose of suspension in your organization, and when is it typically used?
+      - Who within the organization has the authority to suspend an employee, and what criteria are considered before making this decision?
+      - What information must be communicated to an employee in the written communication regarding their suspension?
+      - How does an employee appeal a suspension decision, and what is the process for this appeal?
+      - Could you explain the policy regarding salary deduction during a suspension period?
+      - What steps are taken to resolve the issues leading to suspension before an employee resumes duty?
+      - Are there specific guidelines or conditions under which a suspension may lead to termination?
+      - How does the organization ensure fairness and transparency in the suspension process?
+
+  - intent: counseling
+    examples: |
+      - Counseling
+      - How does your organization define the purpose of counseling in employee management?
+      - What are the typical situations where counseling is used instead of formal disciplinary procedures?
+      - Can you describe the process of counseling in your organization? Who typically conducts the counseling sessions?
+      - What steps are taken during counseling to address issues and promote improvement?
+      - How does your organization determine when a counseling session should escalate to formal disciplinary procedures?
+      - Are there specific guidelines or protocols that counselors follow during these sessions?
+      - How are the outcomes of counseling sessions documented or recorded?
+      - How does counseling contribute to the overall employee development and performance management strategy of the organization?
+
+  - intent: warning_letter
+    examples: |
+      - Warning Letter
+      - What is the purpose of issuing a warning letter in your organization, and when is it typically used?
+      - Can you describe the process of issuing a warning letter? How is it decided whether a warning letter will be verbal or written?
+      - How are employees notified about the reasons for receiving a warning letter?
+      - What are the consequences or implications for an employee who receives a warning letter?
+      - Are there specific guidelines or criteria for each type of misconduct listed (Attendance and Punctuality, Smoking within unauthorized areas, etc.) that trigger a warning letter?
+      - How does your organization ensure that warning letters are fair and consistent across all employees?
+      - What steps can employees take after receiving a warning letter? Is there an appeal process?
+      - How does the organization track and document instances of warning letters issued to employees?
+
+  - intent: termination
+    examples: |
+      - Termination
+      - Can you outline the specific steps involved in the termination process after issuing a warning letter?
+      - How is the decision made whether to issue a warning letter or proceed directly to termination for each listed reason (Attendance and Punctuality, Smoking within unauthorized areas, etc.)?
+      - What is the role of the employee's superiors in the re-evaluation process before deciding on termination?
+      - What are the criteria or circumstances under which an employee may be considered for revocation rather than termination after receiving a warning letter?
+      - How is the one-month notice period communicated to the employee, and what are their obligations during this period?
+      - Are there any specific rights or options available to employees after receiving a termination notice?
+      - What documents are required from the employee during the clearance and exit form process?
+      - How does the organization ensure that the termination process is conducted fairly and in accordance with employment laws and regulations?
+
+  - intent: grade_structure
+    examples: |
+      - Grade Structure
+      - Can you provide more details about how the grading system (GC1 to GC9) is used within the organization?
+      - How are employees assigned to specific grades within the grading system?
+      - What criteria or factors are considered when determining an employee's grade?
+      - Are there opportunities for employees to move between grades, and if so, what are the typical processes involved?
+      - How does the grading system align with career development and progression within the organization?
+      - Are there specific performance expectations or responsibilities associated with each grade level?
+      - How frequently are employees' grades reviewed or re-evaluated?
+      - Can you explain how the grading system is communicated to employees and how it impacts their roles and responsibilities?
+      - Are there any additional benefits or considerations associated with higher grades within the organization?
+      - How does the grading system contribute to overall organizational structure and management?
+
+  - intent: pay_structure
+    examples: |
+      - Pay Structure
+      - how is the pay structure
+
+  - intent: retrial_benefits
+    examples: |
+      - Retrial Benefits
+      - Provident Fund (PF):
+      - How is the Provident Fund (PF) contribution determined for employees?
+      - What percentage of the basic salary is contributed towards PF by the employer and employee?
+      - Are there any thresholds or limits on the PF contribution?
+      - How frequently are PF contributions made and when are they deposited with the authorities?
+      - Can employees opt for voluntary contributions to their PF account?
+      - Employee State Insurance Corporation (ESIC)
+      - What is the eligibility criteria for employees to benefit from ESIC?
+      - How are ESIC contributions calculated and deducted from employees' salaries?
+      - What are the benefits covered under ESIC for employees?
+      - Are there specific medical facilities or services provided under ESIC?
+      - How does the organization ensure compliance with ESIC regulations and reporting?
+      - Gratuity Scheme
+      - Can you explain how the Gratuity Scheme works for employees who complete 5 years of continuous service?
+      - What formula or method is used to calculate gratuity payments?
+      - Are there any conditions or clauses in the Gratuity Scheme that employees should be aware of?
+      - How is the gratuity amount funded and managed by the organization?
+      - Are there provisions for early withdrawal or transfer of gratuity funds under specific circumstances?
+      - Government Rules & Regulations
+      - How does the organization ensure compliance with the latest government rules and regulations related to PF, ESIC, and Gratuity?
+      - Are there regular audits or reviews conducted to verify compliance with these regulations?
+      - How are employees informed about any changes or updates in PF, ESIC, or Gratuity rules?
+      - Appointment Letter Details
+      - What specific details regarding PF and ESIC are mentioned in the Appointment Letter?
+      - How does the Appointment Letter clarify the responsibilities of both employer and employee regarding PF and ESIC contributions?
+      - Are there any additional benefits or incentives related to PF, ESIC, or Gratuity mentioned in the Appointment Letter?
+
+  - intent: cell_phones
+    examples: |
+      - Cell Phones
+      - Who is eligible to receive a company-provided mobile phone according to the policy?
+      - What is the maximum monetary limit for purchasing a mobile phone for Managers to Heads under this policy?
+      - What accessories are included in the allocated amount for mobile phones?
+      - How does the policy handle the loss of a company-provided cell phone?
+      - Who needs approval for International Roaming/ISD facilities under this policy?
+      - How does an employee request an official SIM card?
+      - How often is the Mobile Phones policy reviewed and updated?
+      - What process should employees follow for reimbursement of mobile phone expenses?
+      - Are there specific guidelines for selecting the type of mobile phone for Managers and above?
+      - How are new employees informed about the Mobile Phones policy during onboarding?
+
+  - intent: performance_incentive
+    examples: |
+      - Performance Incentive
+      - What is the main objective of the Performance Incentive Policy in the organization?
+      - How many categories is the performance divided into under this policy?
+      - Can you name one example of each category of incentives mentioned?
+      - How does the organization encourage healthier behavior among employees through this policy?
+      - What are Financial Incentives based on?
+      - How are Recognition based Incentives determined?
+      - Give an example of a Specialty Award.
+      - How often are these incentives reviewed and adjusted?
+      - Who is responsible for overseeing the implementation of this policy?
+      - How does the organization communicate updates to this policy to its employees?
+
+  - intent: financial_incentives
+    examples: |
+      - Financial Incentives
+      - Who is eligible for the incentive plan mentioned?
+      - How often is the evaluation of targets/performance done?
+      - Who approves the disbursement amount for the incentives?
+      - What are the different monetary targets based on?
+      - How is the achievement ratio for disbursement calculated?
+      - What rewards are given to employees achieving their targets at or above 100%?
+      - Who decides on the special trip or other forms of recognition?
+      - How frequently are half-yearly evaluations conducted?
+      - What role does the National Sales Manager play in this incentive plan?
+      - How does this incentive plan aim to motivate marketing employees?
+
+  - intent: recognition_incentives
+    examples: |
+      - Recognition Incentives
+      - Recognition based Incentives
+      - Which employees are eligible for this incentive plan?
+      - Who closely observes the progress of this incentive plan?
+      - How often is the performance evaluated for this plan?
+      - Who awards the incentives to the employees?
+      - What are the possible types of awards mentioned in the plan?
+      - What criteria are used to determine the awards?
+      - How is performance measured for support function employees?
+      - What role does the Reporting Manager play in this incentive plan?
+      - How does the Managing Director contribute to the incentive plan?
+      - How does this incentive plan aim to motivate support function employees?
+
+  - intent: specialty_award
+    examples: |
+      - Specialty Awards
+      - Who is eligible for the Specialty Awards?
+      - How often are the Specialty Awards evaluated?
+      - Who awards the Specialty Awards to the employees?
+      - What are the criteria used to determine the Specialty Awards?
+      - Can you provide examples of both monetary and non-monetary Specialty Awards?
+      - How does the evaluation process work for the Specialty Awards?
+      - What role does the Managing Director play in the Specialty Awards?
+      - How do the Specialty Awards contribute to employee motivation?
+      - Are there different categories or types of Specialty Awards?
+      - How does the organization ensure fairness in the awarding of Specialty Awards?
+
+  - intent: travel_rules
+    examples: |
+      - Travel Rules
+      - Domestic Travel
+      - Travel Approval Authority
+      - Who is eligible to approve travel for Marketing Employees?
+      - What modes of transportation are allowed for travel within 500 kms?
+      - How is reimbursement calculated for travel using own vehicles?
+      - How does the organization handle ticket selection when there's a choice between air and train travel?
+      - What are the guidelines for outside local conveyance?
+      - How are lunch charges determined based on hierarchy levels?
+      - What expenses qualify as Business Promotion expenses and how are they reimbursed?
+      - Who approves the bills for Business Promotion expenses?
+      - How are hotel bookings managed? Is it done by the Administration Department or by the employee in emergencies?
+      - What are the categories of hotels (A+, A, B, C cities) and how do they impact bookings?
+      - How is room accommodation handled when employees of the same gender travel together?
+      - What procedure should employees follow if the hotel is located on the outskirts of a location?
+      - What is the timeline for employees to submit reimbursement claims after travel ends?
+
+  - intent: consultant_engagement_policy
+    examples: |
+      - Consultant Engagement Policy
+      - Can you explain the process of hiring Regular Consultants for specific projects or periods of work?
+      - What criteria are used to determine whether a consultant is categorized as a Regular Consultant or an Irregular Consultant?
+      - How does the organization define "fresher" and "experienced" in the context of consultant hiring?
+      - What types of projects or domains typically require the services of consultants in your organization?
+      - Could you provide an example of a scenario where an Irregular Consultant would be preferred over a Regular Consultant, or vice versa?
+      - What is the procedure for Irregular Consultants to submit their invoices at the end of the month?
+      - Are there specific benefits or perks that Regular Consultants receive based on their grades or hierarchy within the organization?
+      - Who is responsible for approving the benefits for consultants, such as grades and hierarchy-related benefits?
+      - How does the organization ensure compliance with statutory requirements for consultants, particularly regarding Provident Fund, ESIC, and other benefits?
+      - Can you outline the role of the Managing Director in the consultant hiring process, particularly at the time of joining?
+
+  - intent: review_and_amendment
+    examples: |
+      - Review and Amendment
+      - How frequently is the consultant hiring policy reviewed?
+      - Who initiates the review of the consultant hiring policy?
+      - What factors prompt a review of the policy?
+      - Who approves amendments to the consultant hiring policy?
+      - How are changes communicated to consultants?
+      - Are consultants involved in the feedback process for policy changes?
+      - What benefits do consultants receive based on their grade or hierarchy?
+      - Can you describe a recent amendment made to the consultant hiring policy?
+      - How does the organization assess the impact of policy changes?
+      - What are the main goals of periodically reviewing the consultant hiring policy?
+
+  - intent: residual_power
+    examples: |
+      - Residual Power
+      - Who has the authority to modify this policy?
+      - What circumstances might prompt a modification of this policy?
+      - How does the organization communicate policy changes to employees?
+      - Can you provide an example of when this policy was modified in the past?
+      - Are employees notified before a policy change takes effect?
+      - How does the organization ensure transparency when modifying policies?
+      - What considerations are taken into account when deciding to modify or withdraw a policy?
+      - Is there a process for employees to provide feedback on policy modifications?
+      - How often does the organization review policies for potential changes?
+      - Are there specific guidelines or criteria used to determine when a policy should be modified?

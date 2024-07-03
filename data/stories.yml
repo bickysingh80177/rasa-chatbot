@@ -1,0 +1,319 @@
+version: "3.1"
+
+stories:
+  - story: happy path
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_great
+      - action: utter_happy
+
+  - story: sad path 1
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_unhappy
+      - action: utter_cheer_up
+      - action: utter_did_that_help
+      - intent: affirm
+      - action: utter_happy
+
+  - story: sad path 2
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_unhappy
+      - action: utter_cheer_up
+      - action: utter_did_that_help
+      - intent: deny
+      - action: utter_goodbye
+
+  - story: tell weather
+    steps:
+      - intent: weather
+      - action: utter_weather
+
+  - story: tell introduction
+    steps:
+      - intent: introduction
+      - action: utter_introduction
+
+  - story: tell applicability
+    steps:
+      - intent: applicability
+      - action: utter_applicability
+
+  - story: tell company
+    steps:
+      - intent: company
+      - action: utter_company
+
+  - story: tell board
+    steps:
+      - intent: board
+      - action: utter_board
+
+  - story: tell company_profile
+    steps:
+      - intent: company_profile
+      - action: utter_company_profile
+
+  - story: tell co_founders
+    steps:
+      - intent: co_founders
+      - action: utter_co_founders
+
+  - story: tell companys_vision
+    steps:
+      - intent: companys_vision
+      - action: utter_Companys_Vision
+
+  - story: tell commitment
+    steps:
+      - intent: commitment
+      - action: utter_Commitment
+
+  - story: tell recruitment
+    steps:
+      - intent: recruitment
+      - action: utter_Recruitment
+
+  - story: tell process_of_recruitment
+    steps:
+      - intent: process_of_recruitment
+      - action: utter_Recruitment_Process
+
+  - story: tell travel_expenses
+    steps:
+      - intent: travel_expenses
+      - action: utter_Travel_Expenses
+
+  - story: tell relocation_expenses
+    steps:
+      - intent: relocation_expenses
+      - action: utter_Relocation_Expenses
+
+  - story: tell campus_recruitment
+    steps:
+      - intent: campus_recruitment
+      - action: utter_Campus_Recruitment
+
+  - story: tell internships_programme
+    steps:
+      - intent: internships_programme
+      - action: utter_Internships_Programme
+
+  - story: tell campus_placement
+    steps:
+      - intent: campus_placement
+      - action: utter_Campus_Placement
+
+  - story: tell induction
+    steps:
+      - intent: induction
+      - action: utter_induction
+
+  - story: tell training_and_development
+    steps:
+      - intent: training_and_development
+      - action: utter_training_and_development
+
+  - story: tell training_feedback
+    steps:
+      - intent: training_feedback
+      - action: utter_training_feedback
+
+  - story: tell probation
+    steps:
+      - intent: probation
+      - action: utter_probation
+
+  - story: tell process_of_confirmation
+    steps:
+      - intent: process_of_confirmation
+      - action: utter_Process_of_Confirmation
+
+  - story: tell attendance_and_leave_management
+    steps:
+      - intent: attendance_and_leave_management
+      - action: utter_attendance_and_leave_management
+
+  - story: tell compensatory_leave
+    steps:
+      - intent: compensatory_leave
+      - action: utter_compensatory_leave
+
+  - story: tell office_security
+    steps:
+      - intent: office_security
+      - action: utter_office_security
+
+  - story: tell transfer_provision
+    steps:
+      - intent: transfer_provision
+      - action: utter_transfer_provision
+
+  - story: tell notices_period
+    steps:
+      - intent: notices_period
+      - action: utter_notices_period
+
+  - story: tell grievances_redressal_system
+    steps:
+      - intent: grievances_redressal_system
+      - action: utter_grievances_redressal_system
+
+  - story: tell grievances_resolution_procedure
+    steps:
+      - intent: grievances_resolution_procedure
+      - action: utter_grievances_resolution_procedure
+
+  - story: tell welfare_and_enhancement_program
+    steps:
+      - intent: welfare_and_enhancement_program
+      - action: utter_welfare_and_enhancement_program
+
+  - story: tell birthday_celebration
+    steps:
+      - intent: birthday_celebration
+      - action: utter_birthday_celebration
+
+  - story: tell marriage_anniversary
+    steps:
+      - intent: marriage_anniversary
+      - action: utter_marriage_anniversary
+
+  - story: tell wedding_ceremony
+    steps:
+      - intent: wedding_ceremony
+      - action: utter_wedding_ceremony
+
+  - story: tell employee_children_merita_award
+    steps:
+      - intent: employee_children_merita_award
+      - action: utter_employee_children_merita_award
+
+  - story: tell salary_advance
+    steps:
+      - intent: salary_advance
+      - action: utter_salary_advance
+
+  - story: tell maternity_and_paternity_leave
+    steps:
+      - intent: maternity_and_paternity_leave
+      - action: utter_maternity_and_paternity_leave
+
+  - story: tell compensatory_leave2
+    steps:
+      - intent: compensatory_leave2
+      - action: utter_compensatory_leave2
+
+  - story: tell extra_ordinary_leave_and_wfh
+    steps:
+      - intent: extra_ordinary_leave_and_wfh
+      - action: utter_extra_ordinary_leave_and_wfh
+
+  - story: tell management_trainee_on_campus_recruitment
+    steps:
+      - intent: management_trainee_on_campus_recruitment
+      - action: utter_management_trainee_on_campus_recruitment
+
+  - story: tell internship_programme
+    steps:
+      - intent: internship_programme
+      - action: utter_internship_programme2
+
+  - story: tell flexi_working_shedule
+    steps:
+      - intent: flexi_working_shedule
+      - action: utter_flexi_working_shedule
+
+  - story: tell meal_and_conveyance_charges
+    steps:
+      - intent: meal_and_conveyance_charges
+      - action: utter_meal_and_conveyance_charges
+
+  - story: tell disciplinary_procedures
+    steps:
+      - intent: disciplinary_procedures
+      - action: utter_disciplinary_procedures
+
+  - story: tell suspension
+    steps:
+      - intent: suspension
+      - action: utter_suspension
+
+  - story: tell counseling
+    steps:
+      - intent: counseling
+      - action: utter_counseling
+
+  - story: tell warning_letter
+    steps:
+      - intent: warning_letter
+      - action: utter_warning_letter
+
+  - story: tell termination
+    steps:
+      - intent: termination
+      - action: utter_termination
+
+  - story: tell grade_structure
+    steps:
+      - intent: grade_structure
+      - action: utter_grade_structure
+
+  - story: tell pay_structure
+    steps:
+      - intent: pay_structure
+      - action: utter_pay_structure
+
+  - story: tell retrial_benefits
+    steps:
+      - intent: retrial_benefits
+      - action: utter_retrial_benefits
+
+  - story: tell cell_phones
+    steps:
+      - intent: cell_phones
+      - action: utter_cell_phones
+
+  - story: tell performance_incentive
+    steps:
+      - intent: performance_incentive
+      - action: utter_performance_incentive
+
+  - story: tell financial_incentives
+    steps:
+      - intent: financial_incentives
+      - action: utter_financial_incentives
+
+  - story: tell recognition_incentives
+    steps:
+      - intent: recognition_incentives
+      - action: utter_recognition_incentives
+
+  - story: tell specialty_award
+    steps:
+      - intent: specialty_award
+      - action: utter_specialty_award
+
+  - story: tell travel_rules
+    steps:
+      - intent: travel_rules
+      - action: utter_travel_rules
+
+  - story: tell consultant_engagement_policy
+    steps:
+      - intent: consultant_engagement_policy
+      - action: utter_consultant_engagement_policy
+
+  - story: tell review_and_amendment
+    steps:
+      - intent: review_and_amendment
+      - action: utter_review_and_amendment
+
+  - story: tell residual_power
+    steps:
+      - intent: residual_power
+      - action: utter_residual_power
